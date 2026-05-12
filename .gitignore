@@ -1,0 +1,10 @@
+# Editor / OS cruft
+*.swp
+*.swo
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Test artifacts: if you run the script from the repo dir while debugging
+wallpaper.png
