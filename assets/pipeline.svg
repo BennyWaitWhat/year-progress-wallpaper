@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <linearGradient id="node-header-1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#388bfd" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="node-header-2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#238636" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#2ea043" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="node-header-3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8957e5" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="node-header-4" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#e3b341" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="accent-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="50%" stop-color="#bc8cff" />
+      <stop offset="100%" stop-color="#39d353" />
+    </linearGradient>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Outer Card Canvas -->
+  <rect width="1200" height="720" fill="url(#bg-grad)" rx="16" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Header Banner -->
+  <rect x="40" y="32" width="1120" height="6" rx="3" fill="url(#accent-bar)" />
+  <text x="40" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6fc">EXECUTION PIPELINE &amp; DUAL-SUBSYSTEM ARCHITECTURE</text>
+  <text x="40" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">Zero-dependency Windows PowerShell automation: temporal arithmetic, GDI+ canvas rasterization, Win32 P/Invoke &amp; WinRT lock screen projection</text>
+
+  <!-- Node 1: Temporal Math -->
+  <g transform="translate(40, 130)" filter="url(#card-shadow)">
+    <rect width="260" height="390" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+    <path d="M 0,10 Q 0,0 10,0 L 250,0 Q 260,0 260,10 L 260,42 L 0,42 Z" fill="url(#node-header-1)" />
+    <circle cx="24" cy="21" r="6" fill="#58a6ff" />
+    <text x="38" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#58a6ff">1. Temporal Math Engine</text>
+    
+    <text x="20" y="70" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="12" fill="#79c0ff">$now = Get-Date</text>
+    <text x="20" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Epoch &amp; boundary evaluation:</text>
+    <text x="20" y="114" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">$startOfYear = 01/01 00:00</text>
+    <text x="20" y="134" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">$startOfNext = 01/01 (Y+1)</text>
+    
+    <line x1="20" y1="152" x2="240" y2="152" stroke="#21262d" stroke-width="1" />
+    
+    <text x="20" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">Leap-Year Awareness</text>
+    <text x="20" y="196" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#3fb950">$daysInYear = 365 | 366</text>
+    <text x="20" y="216" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">$dayOfYear = $now.DayOfYear</text>
+    <text x="20" y="238" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#d29922">$percent = ($d / $tot) * 100</text>
+
+    <line x1="20" y1="256" x2="240" y2="256" stroke="#21262d" stroke-width="1" />
+
+    <text x="20" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">2026 Live Evaluation</text>
+    <rect x="20" y="290" width="220" height="76" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+    <text x="32" y="312" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#8b949e">Vector: <tspan fill="#f0f6fc" font-weight="bold">DAY 300 / 365</tspan></text>
+    <text x="32" y="332" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#8b949e">Progress: <tspan fill="#3fb950" font-weight="bold">82.2%</tspan></text>
+    <text x="32" y="352" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#58a6ff">Precision: 1 decimal place</text>
+  </g>
+
+  <!-- Node 2: Display & Geometry -->
+  <g transform="translate(330, 130)" filter="url(#card-shadow)">
+    <rect width="260" height="390" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+    <path d="M 0,10 Q 0,0 10,0 L 250,0 Q 260,0 260,10 L 260,42 L 0,42 Z" fill="url(#node-header-2)" />
+    <circle cx="24" cy="21" r="6" fill="#3fb950" />
+    <text x="38" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3fb950">2. Geometry &amp; Display</text>
+    
+    <text x="20" y="70" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="12" fill="#7ee787">[Screen]::PrimaryScreen</text>
+    <text x="20" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Native display detection:</text>
+    <text x="20" y="114" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">$width  = Bounds.Width</text>
+    <text x="20" y="134" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">$height = Bounds.Height</text>
+    
+    <line x1="20" y1="152" x2="240" y2="152" stroke="#21262d" stroke-width="1" />
+    
+    <text x="20" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">Resolution Scaling Factor</text>
+    <text x="20" y="196" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#79c0ff">$resScale = $height / 1200.0</text>
+    <text x="20" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">Maintains proportional layout</text>
+    <text x="20" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">across 1080p, 1440p, 4K UHD</text>
+
+    <line x1="20" y1="256" x2="240" y2="256" stroke="#21262d" stroke-width="1" />
+
+    <text x="20" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">Layout Geometry Matrix</text>
+    <rect x="20" y="290" width="220" height="76" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+    <text x="32" y="312" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#c9d1d9">dayRect: (centerY - 260*s)</text>
+    <text x="32" y="332" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#c9d1d9">pctRect: (centerY - 20*s)</text>
+    <text x="32" y="352" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#58a6ff">barWidth: 60% viewport width</text>
+  </g>
+
+  <!-- Node 3: GDI+ Canvas -->
+  <g transform="translate(620, 130)" filter="url(#card-shadow)">
+    <rect width="260" height="390" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+    <path d="M 0,10 Q 0,0 10,0 L 250,0 Q 260,0 260,10 L 260,42 L 0,42 Z" fill="url(#node-header-3)" />
+    <circle cx="24" cy="21" r="6" fill="#bc8cff" />
+    <text x="38" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#bc8cff">3. GDI+ Canvas Renderer</text>
+    
+    <text x="20" y="70" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="12" fill="#d2a8ff">System.Drawing.Bitmap</text>
+    <text x="20" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Raster canvas pipeline:</text>
+    <text x="20" y="114" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">$g.Clear(Color::Black)</text>
+    <text x="20" y="134" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">SmoothingMode = AntiAlias</text>
+    
+    <line x1="20" y1="152" x2="240" y2="152" stroke="#21262d" stroke-width="1" />
+    
+    <text x="20" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">Typography &amp; Vectors</text>
+    <text x="20" y="196" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#f0883e">Font: Segoe UI Bold (130pt)</text>
+    <text x="20" y="216" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#f0883e">Font: Segoe UI Reg (80pt)</text>
+    <text x="20" y="236" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#c9d1d9">DrawRectangle + FillRectangle</text>
+
+    <line x1="20" y1="256" x2="240" y2="256" stroke="#21262d" stroke-width="1" />
+
+    <text x="20" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">Lossless Serialization</text>
+    <rect x="20" y="290" width="220" height="76" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+    <text x="32" y="312" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#8b949e">Format: <tspan fill="#3fb950" font-weight="bold">ImageFormat::Png</tspan></text>
+    <text x="32" y="332" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#8b949e">Target: <tspan fill="#79c0ff">%LOCALAPPDATA%</tspan></text>
+    <text x="32" y="352" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#c9d1d9">\YearProgressWallpaper\*.png</text>
+  </g>
+
+  <!-- Node 4: Dual Subsystem Injection -->
+  <g transform="translate(910, 130)" filter="url(#card-shadow)">
+    <rect width="250" height="390" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+    <path d="M 0,10 Q 0,0 10,0 L 240,0 Q 250,0 250,10 L 250,42 L 0,42 Z" fill="url(#node-header-4)" />
+    <circle cx="24" cy="21" r="6" fill="#d29922" />
+    <text x="38" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#d29922">4. Dual OS Projection</text>
+    
+    <!-- Win32 Branch -->
+    <rect x="15" y="58" width="220" height="142" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <text x="26" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#58a6ff">A. Win32 Desktop Hook</text>
+    <text x="26" y="98" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#79c0ff">user32.dll P/Invoke</text>
+    <text x="26" y="116" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="9.5" fill="#c9d1d9">SystemParametersInfo(</text>
+    <text x="34" y="132" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="9" fill="#8b949e">SPI_SETDESKWALLPAPER 0x14,</text>
+    <text x="34" y="148" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="9" fill="#8b949e">SPIF_UPDATEINIFILE | SENDCHG)</text>
+    <text x="26" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#3fb950">HKCU WallpaperStyle = 10</text>
+    <text x="26" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#8b949e">Instant shell desktop refresh</text>
+
+    <!-- WinRT Branch -->
+    <rect x="15" y="210" width="220" height="166" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <text x="26" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#bc8cff">B. WinRT Lock Screen Hook</text>
+    <text x="26" y="250" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" fill="#d2a8ff">LockScreen Modern API</text>
+    <text x="26" y="268" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="9" fill="#c9d1d9">StorageFile::GetFileFromPathAsync</text>
+    <text x="26" y="286" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="9" fill="#79c0ff">[Sys.WinRTSystemExt]::AsTask</text>
+    <text x="26" y="304" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="9" fill="#c9d1d9">LockScreen::SetImageFileAsync</text>
+    <text x="26" y="324" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#3fb950">Synchronous .Wait(-1) unwrap</text>
+    <text x="26" y="342" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#8b949e">Graceful try/catch fallback</text>
+  </g>
+
+  <!-- Connectors between horizontal nodes -->
+  <line x1="300" y1="320" x2="330" y2="320" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4,3" />
+  <polygon points="328,316 334,320 328,324" fill="#58a6ff" />
+
+  <line x1="590" y1="320" x2="620" y2="320" stroke="#3fb950" stroke-width="2" stroke-dasharray="4,3" />
+  <polygon points="618,316 624,320 618,324" fill="#3fb950" />
+
+  <line x1="880" y1="320" x2="910" y2="320" stroke="#bc8cff" stroke-width="2" stroke-dasharray="4,3" />
+  <polygon points="908,316 914,320 908,324" fill="#bc8cff" />
+
+  <!-- Bottom Automation Bar: Task Scheduler -->
+  <g transform="translate(40, 545)" filter="url(#card-shadow)">
+    <rect width="1120" height="145" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+    <rect x="0" y="0" width="6" height="145" rx="3" fill="#3fb950" />
+    
+    <text x="28" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#f0f6fc">UNATTENDED DAILY AUTOMATION &amp; LIFECYCLE MANAGEMENT</text>
+    <text x="28" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Configured via install.ps1 using Windows Task Scheduler cmdlets (New-ScheduledTaskAction, New-ScheduledTaskTrigger)</text>
+
+    <!-- 3 feature blocks -->
+    <g transform="translate(28, 70)">
+      <rect width="340" height="55" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+      <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#79c0ff">Daily 00:00 Cadence</text>
+      <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">Triggers precisely at midnight each day</text>
+    </g>
+
+    <g transform="translate(390, 70)">
+      <rect width="340" height="55" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+      <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#3fb950">Catch-Up Resiliency</text>
+      <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">StartWhenAvailable=True wakes on boot/resume</text>
+    </g>
+
+    <g transform="translate(752, 70)">
+      <rect width="340" height="55" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+      <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#f0883e">Zero-Footprint Uninstall</text>
+      <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">uninstall.ps1 unregisters task &amp; purges appdata</text>
+    </g>
+  </g>
+</svg>

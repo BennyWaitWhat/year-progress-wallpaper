@@ -8,3 +8,11 @@ desktop.ini
 
 # Test artifacts: if you run the script from the repo dir while debugging
 wallpaper.png
+
+# AI tooling & session artifacts
+.claude/
+.grill/
+.cursor/
+.gemini/
+.agents/
+CLAUDE.md
